@@ -121,7 +121,7 @@ function initialize() {
 
 
     // Setup infowindows
-    google.maps.event.addListener(marker_chuaanlinh, 'click', function() {
+    /*google.maps.event.addListener(marker_chuaanlinh, 'click', function() {
         document.getElementById("info-container").style.left = "0";
 
         var xhr = new XMLHttpRequest();
@@ -133,9 +133,23 @@ function initialize() {
         
         xhr.open("GET", "../HTML/infowindow_chuaanlinh.html", true);
         xhr.send();
+    });*/
+
+
+    marker_chuaanlinh.addListener('click', function() {
+        document.getElementById("info-container").style.left = "0";
+  
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("info-container").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.open("GET", "../HTML/infowindow_chuaanlinh.html", true);
+        xhr.send();
     });
 
-    google.maps.event.addListener(marker_denthanphukhanh, 'click', function() {
+    /*google.maps.event.addListener(marker_denthanphukhanh, 'click', function() {
         document.getElementById("info-container").style.left = "0";
 
         var xhr = new XMLHttpRequest();
@@ -259,10 +273,12 @@ function initialize() {
         
         xhr.open("GET", "../HTML/infowindow_tuongdaichienthanggiathe.html", true);
         xhr.send();
-    });
+    });*/
 
 
-    google.maps.event.addListener(map, 'click', function() {
+    //google.maps.event.addListener(map, 'click', function() {
+        //document.getElementById("info-container").style.left = "-300px";
+    map.addListener('click', function() {
         document.getElementById("info-container").style.left = "-300px";
     });
 }
@@ -271,4 +287,5 @@ function closeInfoWindow() {
     document.getElementById("info-container").style.left = "-300px";
 }
 
-google.maps.event.addDomListener(window, "load", initialize);
+//google.maps.event.addDomListener(window, "load", initialize);
+window.addEventListener('load', initialize);
