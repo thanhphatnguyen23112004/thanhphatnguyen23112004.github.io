@@ -59,7 +59,7 @@ function initialize() {
 
 
     // Setup point location
-    var marker_chuaanlinh = new google.maps.marker.AdvancedMarker({
+    var marker_chuaanlinh = new google.maps.Marker({
         position: new google.maps.LatLng(9.886796019483924, 106.58415852103211),
         map: map,
         icon: icon_chuaanlinh,
