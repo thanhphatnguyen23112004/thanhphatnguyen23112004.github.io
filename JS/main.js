@@ -134,6 +134,7 @@ function initialize() {
         xhr.open("GET", "../HTML/infowindow_chuaanlinh.html", true);
         xhr.send();
     });
+
     google.maps.event.addListener(marker_denthanphukhanh, 'click', function() {
         document.getElementById("info-container").style.left = "0";
 
