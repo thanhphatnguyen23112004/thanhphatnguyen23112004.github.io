@@ -65,7 +65,7 @@ function initialize() {
         icon: icon_chuaanlinh,
     });
 
-    /*var marker_denthanphukhanh = new google.maps.Marker({
+    var marker_denthanphukhanh = new google.maps.Marker({
         position: new google.maps.LatLng(10.040581829970584, 106.44659988775408),
         map: map,
         icon: icon_denthanphukhanh,
@@ -117,11 +117,11 @@ function initialize() {
         position: new google.maps.LatLng(9.889797446056772, 106.59578262923668),
         map: map,
         icon: icon_tuongdaichienthanggiathe,
-    });*/
+    });
 
 
     // Setup infowindows
-    /*google.maps.event.addListener(marker_chuaanlinh, 'click', function() {
+    google.maps.event.addListener(marker_chuaanlinh, 'click', function() {
         document.getElementById("info-container").style.left = "0";
 
         var xhr = new XMLHttpRequest();
@@ -133,23 +133,8 @@ function initialize() {
         
         xhr.open("GET", "../HTML/infowindow_chuaanlinh.html", true);
         xhr.send();
-    });*/
-
-
-    marker_chuaanlinh.addListener('click', function() {
-        document.getElementById("info-container").style.left = "0";
-  
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById("info-container").innerHTML = xhr.responseText;
-          }
-        };
-        xhr.open("GET", "../HTML/infowindow_chuaanlinh.html", true);
-        xhr.send();
     });
-
-    /*google.maps.event.addListener(marker_denthanphukhanh, 'click', function() {
+    google.maps.event.addListener(marker_denthanphukhanh, 'click', function() {
         document.getElementById("info-container").style.left = "0";
 
         var xhr = new XMLHttpRequest();
@@ -273,12 +258,10 @@ function initialize() {
         
         xhr.open("GET", "../HTML/infowindow_tuongdaichienthanggiathe.html", true);
         xhr.send();
-    });*/
+    });
 
 
-    //google.maps.event.addListener(map, 'click', function() {
-        //document.getElementById("info-container").style.left = "-300px";
-    map.addListener('click', function() {
+    google.maps.event.addListener(map, 'click', function() {
         document.getElementById("info-container").style.left = "-300px";
     });
 }
@@ -287,5 +270,4 @@ function closeInfoWindow() {
     document.getElementById("info-container").style.left = "-300px";
 }
 
-//google.maps.event.addDomListener(window, "load", initialize);
-window.addEventListener('load', initialize);
+google.maps.event.addDomListener(window, "load", initialize);
