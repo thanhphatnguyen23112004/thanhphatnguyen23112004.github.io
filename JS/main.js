@@ -59,13 +59,13 @@ function initialize() {
 
 
     // Setup point location
-    var marker_chuaanlinh = new google.maps.Marker({
+    var marker_chuaanlinh = new google.maps.marker.AdvancedMarker({
         position: new google.maps.LatLng(9.886796019483924, 106.58415852103211),
         map: map,
         icon: icon_chuaanlinh,
     });
 
-    var marker_denthanphukhanh = new google.maps.Marker({
+    /*var marker_denthanphukhanh = new google.maps.Marker({
         position: new google.maps.LatLng(10.040581829970584, 106.44659988775408),
         map: map,
         icon: icon_denthanphukhanh,
@@ -117,7 +117,7 @@ function initialize() {
         position: new google.maps.LatLng(9.889797446056772, 106.59578262923668),
         map: map,
         icon: icon_tuongdaichienthanggiathe,
-    });
+    });*/
 
 
     // Setup infowindows
