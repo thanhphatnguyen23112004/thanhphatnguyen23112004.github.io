@@ -2,7 +2,7 @@ function btnEncrypt() {
     document.getElementById("resultBruteforce").innerHTML = "";
     var plainText = document.getElementById("plainText").value;
     if (plainText.length == 0) {
-        document.getElementById("errorMsg").innerHTML = 'Chưa nhập Plain text kìa! :D';
+        document.getElementById("errorMsg").innerHTML = 'Chưa nhập Plain text';
         return;
     }
     var key = document.getElementById("key").value.toUpperCase();
@@ -21,7 +21,6 @@ function btnEncrypt() {
         }
         key = String.fromCharCode(parseInt(key) + 65);
     }
-    //document.getElementById("key").value = key;
     var cipherText = crypt(plainText, key);
     document.getElementById("cipherText").value = cipherText;
     document.getElementById("errorMsg").innerHTML = "";
@@ -52,13 +51,13 @@ function btnDecrypt() {
     document.getElementById("resultBruteforce").innerHTML = "";
     var cipherText = document.getElementById("cipherText").value;
     if (cipherText.length == 0) {
-        document.getElementById("errorMsg").innerHTML = 'Chưa nhập Cipher text kìa!';
+        document.getElementById("errorMsg").innerHTML = 'Chưa nhập Cipher text';
         return;
     }
     document.getElementById("cipherText").value = cipherText;
     var key = document.getElementById("key").value.toUpperCase();
     if (key.length > 1) {
-        document.getElementById("errorMsg").innerHTML = 'Khóa K chỉ một ký tự thôi nhé';
+        document.getElementById("errorMsg").innerHTML = 'Khóa K chỉ có thể chứa một ký tự';
         return;
     } else if (key.length == 0) {
         document.getElementById("plainText").value = "";
