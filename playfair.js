@@ -12,12 +12,11 @@ function updateMatrixKey() {
 function crypt(message, matrixKey, isDecrypt = false) {
     var text = message.toUpperCase().replace(/[^A-Z]+/g, "").replace('J', 'I');
     var result = "";
-    var k = isDecrypt ? 4 : 1; // 1 => encrypt, 4 => decrypt
+    var k = isDecrypt ? 4 : 1;
 
-    // Chèn "X" và xử lý các cặp ký tự giống nhau
     for (let i = 0; i < text.length; i += 2) {
         let chrA = text.charAt(i);
-        let chrB = (i + 1 < text.length) ? text.charAt(i + 1) : 'X'; // Chèn 'X' nếu là ký tự cuối cùng và không tạo thành cặp
+        let chrB = (i + 1 < text.length) ? text.charAt(i + 1) : 'X';
 
         if (chrA == chrB) {
             chrB = 'X';

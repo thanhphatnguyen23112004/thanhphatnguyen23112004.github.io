@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<presentation availableOffline="1" guid="A3865E20-EB21-4815-A42D-8026E355B3B6" version="0">
+<presentation availableOffline="1" guid="FCDAE380-B87C-40B7-9599-017A14469C46" version="0">
 	<info>
 		<title>tuongdaichienthanggiathe</title>
 		<description/>
 	</info>
-	<files index="id52" thumbnail="id19" totalSize="2381583">
+	<files index="id54" thumbnail="id19" totalSize="2485454">
 		<file id="id0">data/book.pdf</file>
 		<file id="id1">data/book.pdf.js</file>
 		<file id="id2">data/css/viewer.css</file>
@@ -35,30 +35,32 @@
 		<file id="id27">data/res/img_12.jpg</file>
 		<file id="id28">data/res/img_13.jpg</file>
 		<file id="id29">data/res/img_14.jpg</file>
-		<file id="id30">data/res/img_2.jpg</file>
-		<file id="id31">data/res/img_3.jpg</file>
-		<file id="id32">data/res/img_4.jpg</file>
-		<file id="id33">data/res/img_5.jpg</file>
-		<file id="id34">data/res/img_6.jpg</file>
-		<file id="id35">data/res/img_7.jpg</file>
-		<file id="id36">data/res/img_8.jpg</file>
-		<file id="id37">data/res/img_9.jpg</file>
-		<file id="id38">data/thumbs/page-01.jpg</file>
-		<file id="id39">data/thumbs/page-02.jpg</file>
-		<file id="id40">data/thumbs/page-03.jpg</file>
-		<file id="id41">data/thumbs/page-04.jpg</file>
-		<file id="id42">data/thumbs/page-05.jpg</file>
-		<file id="id43">data/thumbs/page-06.jpg</file>
-		<file id="id44">data/thumbs/page-07.jpg</file>
-		<file id="id45">data/thumbs/page-08.jpg</file>
-		<file id="id46">data/thumbs/page-09.jpg</file>
-		<file id="id47">data/thumbs/page-10.jpg</file>
-		<file id="id48">data/thumbs/page-11.jpg</file>
-		<file id="id49">data/thumbs/page-12.jpg</file>
-		<file id="id50">data/thumbs/page-13.jpg</file>
-		<file id="id51">data/thumbs/page-14.jpg</file>
-		<file id="id52">index.html</file>
-		<file id="id53">ismplayer.html</file>
+		<file id="id30">data/res/img_15.jpg</file>
+		<file id="id31">data/res/img_2.jpg</file>
+		<file id="id32">data/res/img_3.jpg</file>
+		<file id="id33">data/res/img_4.jpg</file>
+		<file id="id34">data/res/img_5.jpg</file>
+		<file id="id35">data/res/img_6.jpg</file>
+		<file id="id36">data/res/img_7.jpg</file>
+		<file id="id37">data/res/img_8.jpg</file>
+		<file id="id38">data/res/img_9.jpg</file>
+		<file id="id39">data/thumbs/page-01.jpg</file>
+		<file id="id40">data/thumbs/page-02.jpg</file>
+		<file id="id41">data/thumbs/page-03.jpg</file>
+		<file id="id42">data/thumbs/page-04.jpg</file>
+		<file id="id43">data/thumbs/page-05.jpg</file>
+		<file id="id44">data/thumbs/page-06.jpg</file>
+		<file id="id45">data/thumbs/page-07.jpg</file>
+		<file id="id46">data/thumbs/page-08.jpg</file>
+		<file id="id47">data/thumbs/page-09.jpg</file>
+		<file id="id48">data/thumbs/page-10.jpg</file>
+		<file id="id49">data/thumbs/page-11.jpg</file>
+		<file id="id50">data/thumbs/page-12.jpg</file>
+		<file id="id51">data/thumbs/page-13.jpg</file>
+		<file id="id52">data/thumbs/page-14.jpg</file>
+		<file id="id53">data/thumbs/page-15.jpg</file>
+		<file id="id54">index.html</file>
+		<file id="id55">ismplayer.html</file>
 	</files>
 </presentation>
 

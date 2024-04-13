@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<presentation availableOffline="1" guid="12474203-C27B-468A-8634-538287DF410E" version="0">
+<presentation availableOffline="1" guid="C535F05A-65E9-4A84-B5F2-7B74D7A1CF82" version="0">
 	<info>
 		<title>tieudoan307</title>
 		<description/>
 	</info>
-	<files index="id55" thumbnail="id19" totalSize="2688889">
+	<files index="id56" thumbnail="id19" totalSize="2833985">
 		<file id="id0">data/book.pdf</file>
 		<file id="id1">data/book.pdf.js</file>
 		<file id="id2">data/css/viewer.css</file>
@@ -60,8 +60,9 @@
 		<file id="id52">data/thumbs/page-14.jpg</file>
 		<file id="id53">data/thumbs/page-15.jpg</file>
 		<file id="id54">data/thumbs/page-16.jpg</file>
-		<file id="id55">index.html</file>
-		<file id="id56">ismplayer.html</file>
+		<file id="id55">data/thumbs/page-17.jpg</file>
+		<file id="id56">index.html</file>
+		<file id="id57">ismplayer.html</file>
 	</files>
 </presentation>
 
